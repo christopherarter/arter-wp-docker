@@ -1,0 +1,24 @@
+{
+    "name": "arter-dev/arter-wp-docker",
+    "type": "project",
+    "description": "WP Starter with docker",
+    "require": {
+        "composer/installers": "^1.6",
+        "johnpbloch/wordpress": "4.9.*",
+        "christopherarter/arter-wp-starter-theme":"*"
+    },
+    "repositories": [
+        {
+            "name":"christopherarter/arter-wp-starter-theme",
+            "type": "vcs",
+            "url": "git@github.com:christopherarter/arter-wp-starter-theme.git"
+        }
+    ],
+    "extra": {
+        "wordpress-install-dir": "wordpress",
+        "installer-paths": {
+            "wordpress/wp-content/themes/{$name}": ["type:wordpress-theme"]
+        }
+
+    }
+}
