@@ -1,0 +1,3 @@
+[submodule "arter-wordpress"]
+	path = app
+	url = https://github.com/christopherarter/arter-wordpress
